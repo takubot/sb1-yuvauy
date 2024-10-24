@@ -1,0 +1,43 @@
+version: "3.8"
+
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:8000
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+      - /app/.next
+
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+      - uploads:/app/uploads
+      - vector_store:/app/vector_store
+    environment:
+      - DATABASE_URL=postgresql://postgres:postgres@db:5432/doppel
+      - FRONTEND_URL=http://localhost:3000
+    depends_on:
+      - db
+
+  db:
+    image: postgres:17
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=takumi
+      - POSTGRES_PASSWORD={I~hH?HO~%^ubX{+
+      - POSTGRES_DB=doppel
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
+  uploads:
+  vector_store:

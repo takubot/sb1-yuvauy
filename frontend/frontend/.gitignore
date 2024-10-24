@@ -27,7 +27,9 @@ Thumbs.db
 venv/
 .venv/
 
-
+# Upload directories
+uploads/
+vector_store/
 
 # Database
 *.sqlite

@@ -1,0 +1,83 @@
+# Web Framework and Server
+fastapi==0.111.1
+uvicorn[standard]==0.30.3
+
+# Google Cloud Services
+google-cloud-storage==2.18.0
+google-cloud-bigquery==3.25.0
+google-cloud-documentai==2.30.0
+google-cloud-pubsub==2.23.0
+google-cloud-bigquery-storage==2.25.0
+google-cloud-firestore==2.16.0
+google-cloud-secret-manager==2.20.0
+google-api-python-client==2.134.0
+google-auth-httplib2==0.2.0
+
+# Database and ORM
+pymysql==1.1.1
+sqlalchemy==2.0.32
+db-dtypes==1.2.0
+
+# Authentication and Security
+python-jose==3.3.0
+bcrypt==4.2.0
+passlib==1.7.4
+cryptography==42.0.8
+pyjwt==2.8.0
+
+# PDF and Document Processing
+pypdf2==3.0.1
+pymupdf==1.24.9
+pdfminer-six==20231228
+pdfplumber==0.11.1
+pypdf==4.3.1
+pypdfium2==4.30.0
+pdf2image
+python-docx==1.1.2
+fpdf==1.7.2
+reportlab
+lxml==5.2.2
+openpyxl==3.1.5
+
+# Data Processing and Analysis
+pandas==2.2.2
+pyarrow==16.1.0
+ujson==5.10.0
+
+# Image Processing
+opencv-python-headless
+opencv-python
+pillow==10.3.0
+img2pdf
+
+# Web Scraping and HTML Processing
+beautifulsoup4==4.12.3
+bs4==0.0.2
+soupsieve==2.5
+
+# Miscellaneous
+python-dotenv==1.0.1
+chardet==5.2.0
+cachecontrol==0.14.0
+cffi==1.16.0
+distro==1.9.0
+et-xmlfile==1.1.0
+firebase-admin==6.5.0
+httplib2==0.22.0
+jinja2==3.1.4
+msgpack==1.0.8
+orjson==3.10.5
+pycparser==2.22
+pyparsing==3.1.2
+setuptools==70.1.0
+tqdm==4.66.4
+uritemplate==4.1.1
+
+# Pydantic Settings
+pydantic-settings==2.6.0
+
+# Testing
+pytest==8.3.2
+
+# OpenAI
+openai==1.35.4
